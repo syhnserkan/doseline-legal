@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>Privacy Policy · Doseline</title>
+    <meta
+      name="description"
+      content="Doseline stores your treatment record on your device and nowhere else. No account, no server, no analytics, no ads."
+    />
+
+    <style>
+      /*
+        Doseline's own tokens, from src/theme/index.ts. The app is light-theme only by commitment
+        (userInterfaceStyle is pinned to light in app.json), so this page is too — a dark legal
+        page for a light app is a different product wearing the same name.
+      */
+      :root {
+        --bg: #ffffff;
+        --surface: #f4f5f7;
+        --sunken: #e9eaee;
+        --accent: #0e7c86;
+        --text: #14171f;
+        --text-dim: #6b7280;
+        --text-faint: #9ca0a8;
+        --hairline: #e4e5e9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Arial,
+          sans-serif;
+        background: var(--bg);
+        line-height: 1.7;
+        max-width: 760px;
+        margin: auto;
+        padding: 64px 22px 80px;
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .kicker {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 12px;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+        margin: 0 0 8px;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: -0.2px;
+        margin-top: 38px;
+        margin-bottom: 6px;
+      }
+
+      p {
+        margin: 10px 0;
+        color: var(--text-dim);
+      }
+
+      ul {
+        margin: 10px 0 20px 18px;
+        padding: 0;
+        color: var(--text-dim);
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      strong {
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid var(--hairline);
+        margin: 28px 0;
+      }
+
+      /* The bundle identifier, in both documents. Sized down so a monospace run does not tower
+         over the sentence it sits in. */
+      code {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+        font-size: 0.88em;
+        background: var(--surface);
+        border: 1px solid var(--hairline);
+        border-radius: 5px;
+        padding: 1px 5px;
+        color: var(--text-dim);
+      }
+
+      .effective {
+        color: var(--text-faint);
+        margin-bottom: 28px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+      }
+
+      .callout {
+        background: var(--surface);
+        border: 1px solid var(--hairline);
+        border-left: 3px solid var(--accent);
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin: 20px 0;
+      }
+
+      .callout p {
+        margin: 6px 0;
+      }
+
+      .back {
+        display: inline-block;
+        margin-top: 48px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 460px) {
+        body {
+          padding: 48px 18px 60px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="kicker">Doseline</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective"><strong>Effective Date:</strong> August 23, 2026</p>
+
+    <p>
+      This Privacy Policy explains what the <strong>Doseline</strong> mobile application
+      (<code>com.serkansayhan.doseline</code>) does with your information. It is short, because the
+      app does very little with it.
+    </p>
+
+    <div class="callout">
+      <p>
+        <strong>In short:</strong> Doseline has no account, no server, and no analytics. Everything
+        you record — your doses, weight, measurements, side effects, protein and water, and your
+        settings — is stored on your device and is never transmitted to us or to anyone else. There
+        is nowhere for us to send it: the app contains no networking code and makes no requests to
+        any server, ours or otherwise.
+      </p>
+    </div>
+
+    <hr />
+
+    <h2>1. No Account, No Server</h2>
+    <p>
+      You never create an account to use Doseline. There is no sign-up, no email address, no
+      password, no social login, and no anonymous identifier assigned to you.
+    </p>
+    <p>
+      There is also no backend. Doseline is not a client for a service we operate — it is a
+      self-contained app. We do not receive your data, we cannot look it up, and we could not
+      produce it if we were asked to.
+    </p>
+
+    <h2>2. What the App Stores, and Where</h2>
+    <p>
+      Everything you enter is written to a database inside the app's own private storage on your
+      device. That includes:
+    </p>
+    <ul>
+      <li>
+        <strong>Doses</strong> — the medication, the amount in milligrams, the date and time, the
+        injection or dosing site, any note you write, and the reason you selected if a dose changed.
+      </li>
+      <li><strong>Weight entries</strong> and an optional goal weight.</li>
+      <li><strong>Body measurements</strong> — the tape figures you record, by site and by date.</li>
+      <li>
+        <strong>Side effects</strong> — the symptoms you log, their severity, and when you logged
+        them.
+      </li>
+      <li><strong>Protein and water</strong> — the amounts you count, by day.</li>
+      <li>
+        <strong>Supply</strong> — the pens or vials you have started, their strength, and when you
+        opened them.
+      </li>
+      <li>
+        <strong>Your profile and settings</strong> — the medication you are on, your dosing
+        interval and reminder time, your units, your symptom watchlist, and your language choice.
+      </li>
+    </ul>
+    <p>
+      Other apps on your device cannot read this storage, and it is removed by iOS when you delete
+      the app.
+    </p>
+
+    <h2>3. Health Information</h2>
+    <p>
+      Most of what Doseline stores is health information about you, and it is treated as such: it
+      stays on your device. We do not collect it, do not process it, do not analyse it, do not
+      profile you with it, and do not sell or share it with anyone — including advertisers, data
+      brokers, insurers, employers, or pharmaceutical companies.
+    </p>
+    <p>
+      Doseline does not connect to <strong>Apple Health</strong>. It neither reads from nor writes
+      to HealthKit, and it never asks for permission to do so.
+    </p>
+
+    <h2>4. Device Backups</h2>
+    <p>
+      Doseline's database lives in the app's Documents storage, which means it is included in your
+      device's own backup if you have one turned on — an <strong>iCloud Backup</strong>, or an
+      encrypted backup to a computer. This is worth stating plainly because it is the one way a
+      copy of your record leaves your phone.
+    </p>
+    <p>
+      That backup is made by Apple's software under your control, not by Doseline. It is governed by
+      <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>, we
+      have no access to it, and you can turn it off or exclude the app in your device settings. Note
+      that this is a backup and not a sync: Doseline does not share your record between your
+      devices, and there is currently no such feature.
+    </p>
+    <p>
+      Files you create with <strong>Export</strong> are written to the app's temporary cache
+      directory, which iOS excludes from backups, and are cleared afterwards.
+    </p>
+
+    <h2>5. Reminders and Notifications</h2>
+    <p>
+      Doseline can remind you when a dose is due and warn you when a container is running low. If
+      you allow notifications, these are scheduled <strong>locally on your device</strong> by iOS
+      from your own dose history.
+    </p>
+    <p>
+      There is no push server, no push token, and nothing is sent anywhere to make a reminder
+      appear. If you decline the notification permission, the rest of the app works exactly as
+      before.
+    </p>
+
+    <h2>6. Exporting and Sharing</h2>
+    <p>
+      Doseline can produce a PDF summary for a clinician and CSV files of your records. Nothing is
+      exported unless you ask for it. The files are written to temporary storage on your device and
+      handed to the standard iOS share sheet.
+    </p>
+    <p>
+      What happens next is entirely your choice — you decide whether to email it, message it, save
+      it to Files, or print it. Once you send a file somewhere, that destination's own privacy
+      policy applies to it, and we have no involvement in or knowledge of where it went.
+    </p>
+
+    <h2>7. What We Deliberately Do Not Collect</h2>
+    <p>Doseline does not collect, and does not ask for, any of the following:</p>
+    <ul>
+      <li>Your name, email address, phone number, postal address, or date of birth</li>
+      <li>Your location, at any precision</li>
+      <li>Your contacts, calendar, photos, camera, or microphone</li>
+      <li>
+        The advertising identifier (IDFA), and the App Tracking Transparency prompt is therefore
+        never shown
+      </li>
+      <li>Device identifiers, IP addresses, or any usage or diagnostic telemetry</li>
+      <li>Screen views, taps, sessions, funnels, or any other behavioural analytics</li>
+    </ul>
+    <p>
+      The app requests <strong>no device permissions at all</strong> except notifications, and that
+      one is optional. This is verifiable rather than a promise: the app declares no permission
+      usage descriptions, and it contains no analytics SDK, no advertising SDK, no crash reporter,
+      and no third-party tracking library of any kind.
+    </p>
+
+    <h2>8. Third-Party Services</h2>
+    <p>
+      Doseline embeds no third-party services. The only company involved in your use of the app
+      besides you is <strong>Apple</strong>, in the ordinary ways:
+    </p>
+    <ul>
+      <li>
+        <strong>The App Store</strong> handles the download and any future purchase. Apple may tell
+        us aggregate, anonymous figures such as download and crash counts. These come from Apple and
+        cannot identify you.
+      </li>
+      <li>
+        <strong>The rating prompt.</strong> After you have used the app for a while, iOS may show
+        Apple's standard "rate this app" sheet. The app asks iOS to consider showing it and sends no
+        data with the request; whatever you write in a review goes to Apple, not to us.
+      </li>
+    </ul>
+    <p>
+      Doseline does not currently offer in-app purchases. If it offers them in the future, they will
+      be processed by Apple, and we will never see your payment details.
+    </p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>
+      Doseline is not intended for children under 13, and is rated accordingly on the App Store. We
+      do not knowingly collect information from anyone — of any age — because the app collects
+      nothing.
+    </p>
+
+    <h2>10. Your Data Is Yours</h2>
+    <p>
+      You are in direct control of everything the app holds, without asking us for anything:
+    </p>
+    <ul>
+      <li>
+        <strong>Get it out.</strong> Export a PDF summary and CSV files at any time, free of charge.
+        This is deliberately not behind a paid tier — a record you cannot get out of an app is not
+        really yours.
+      </li>
+      <li>
+        <strong>Correct it.</strong> Every record can be edited or backdated. Nothing is fixed once
+        saved.
+      </li>
+      <li>
+        <strong>Erase it.</strong> Settings contains an option that permanently deletes everything
+        the app has stored.
+      </li>
+      <li><strong>Delete the app.</strong> That removes its storage from your device with it.</li>
+    </ul>
+
+    <h2>11. Security</h2>
+    <p>
+      Your record is protected by your device: iOS file protection, together with your passcode,
+      Face ID or Touch ID. Because there is no server holding a copy, there is no database of ours
+      that can be breached and no employee of ours who can read your treatment history.
+    </p>
+    <p>
+      The corollary is honest and worth saying: the security of your record is effectively the
+      security of your phone. Use a passcode, and keep your device software up to date.
+    </p>
+
+    <h2>12. Your Rights</h2>
+    <p>
+      Depending on where you live, you may have rights under laws such as the GDPR or the CCPA to
+      access, correct, export, or delete personal data a company holds about you, and not to have it
+      sold.
+    </p>
+    <p>
+      We hold none, so there is nothing for us to disclose, sell, or delete. Those rights are
+      satisfied directly in the app: your data is already in your possession, editing is built into
+      every screen, export is free, and erasure is a single action in Settings. We have never sold
+      personal information and have none to sell.
+    </p>
+
+    <h2>13. Changes to This Privacy Policy</h2>
+    <p>
+      If the app changes in a way that affects this document — for example if optional syncing
+      between your own devices is ever added — this policy will be updated before that feature
+      ships, and the "Effective Date" above will change.
+    </p>
+
+    <h2>14. Contact</h2>
+    <p>
+      Questions about this Privacy Policy:<br />
+      <strong>Email:</strong> <a href="mailto:syhnserkan@gmail.com">syhnserkan@gmail.com</a>
+    </p>
+
+    <a class="back" href="index.html">← Back</a>
+  </body>
+</html>
