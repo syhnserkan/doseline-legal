@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>Support · Doseline</title>
+    <meta
+      name="description"
+      content="Help with Doseline — exporting your record, fixing an entry, reminders that do not arrive, and moving to a new phone."
+    />
+
+    <style>
+      :root {
+        --bg: #ffffff;
+        --surface: #f4f5f7;
+        --sunken: #e9eaee;
+        --accent: #0e7c86;
+        --warn: #5a2a2a;
+        --warn-wash: rgba(90, 42, 42, 0.07);
+        --text: #14171f;
+        --text-dim: #6b7280;
+        --text-faint: #9ca0a8;
+        --hairline: #e4e5e9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Arial,
+          sans-serif;
+        background: var(--bg);
+        line-height: 1.7;
+        max-width: 760px;
+        margin: auto;
+        padding: 64px 22px 80px;
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .kicker {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 12px;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+        margin: 0 0 8px;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: -0.2px;
+        margin-top: 38px;
+        margin-bottom: 6px;
+      }
+
+      p {
+        margin: 10px 0;
+        color: var(--text-dim);
+      }
+
+      ul,
+      ol {
+        margin: 10px 0 20px 20px;
+        padding: 0;
+        color: var(--text-dim);
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      strong {
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid var(--hairline);
+        margin: 28px 0;
+      }
+
+      /* The in-app path a step refers to — "Settings → Export". Kept visually distinct from prose
+         so an instruction can be followed without re-reading the sentence around it. */
+      .path {
+        font-weight: 600;
+        color: var(--text);
+        white-space: nowrap;
+      }
+
+      .lede {
+        font-size: 17px;
+        margin-bottom: 24px;
+      }
+
+      .callout {
+        background: var(--surface);
+        border: 1px solid var(--hairline);
+        border-left: 3px solid var(--accent);
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin: 20px 0;
+      }
+
+      .callout.medical {
+        background: var(--warn-wash);
+        border-color: rgba(90, 42, 42, 0.18);
+        border-left-color: var(--warn);
+      }
+
+      .callout.medical strong {
+        color: var(--warn);
+      }
+
+      .callout p {
+        margin: 6px 0;
+      }
+
+      .contact {
+        display: inline-block;
+        margin: 6px 0 4px;
+        padding: 14px 20px;
+        background: var(--surface);
+        border: 1px solid var(--hairline);
+        border-radius: 14px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .back {
+        display: inline-block;
+        margin-top: 48px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 460px) {
+        body {
+          padding: 48px 18px 60px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="kicker">Doseline</p>
+    <h1>Support</h1>
+
+    <p class="lede">
+      Doseline is made by one person. Write to me and you will get a reply from the person who wrote
+      the code, not from a ticket queue.
+    </p>
+
+    <p class="contact">
+      <a href="mailto:syhnserkan@gmail.com?subject=Doseline%20support">syhnserkan@gmail.com</a>
+    </p>
+
+    <p>
+      It helps to include your iOS version and the app version, which is printed at the very bottom
+      of the <span class="path">Settings</span> tab.
+    </p>
+
+    <hr />
+
+    <h2>First, the thing that explains most other answers</h2>
+    <p>
+      <strong>Your record is on your phone and nowhere else.</strong> Doseline has no account and no
+      server. That is the point of it — see the
+      <a href="privacy.html">Privacy Policy</a> — but it has two consequences worth knowing before
+      you need them:
+    </p>
+    <ul>
+      <li>
+        <strong>I cannot see your data</strong>, so I cannot look at your entries to diagnose a
+        problem. Describe what you saw, or send a screenshot.
+      </li>
+      <li>
+        <strong>I cannot recover your data.</strong> If the phone is gone and there was no backup
+        and no export, the record is gone. Nothing on my side can bring it back.
+      </li>
+    </ul>
+
+    <h2>Getting your record out</h2>
+    <p>
+      <span class="path">Settings → Export</span> produces a PDF summary written for a clinician,
+      and CSV files of every record type — doses, weights, measurements, side effects, protein and
+      water. It hands them to the normal iOS share sheet, so you can email them, save them to Files,
+      or print them.
+    </p>
+    <p>
+      This is free, unlimited, and will stay that way. Export a copy occasionally, especially before
+      changing phones.
+    </p>
+
+    <h2>Fixing, backdating or deleting an entry</h2>
+    <p>
+      Every record in Doseline can be edited after the fact, including its date and time. Nothing is
+      locked once saved.
+    </p>
+    <ul>
+      <li>
+        <strong>A dose</strong> — open the <span class="path">Doses</span> tab and tap the entry.
+        The same sheet that logged it will edit it, and it can delete it.
+      </li>
+      <li>
+        <strong>Forgot to log a shot from three weeks ago</strong> — log it now and change the date
+        to when it happened. The level curve, the schedule and the supply count all recalculate.
+      </li>
+      <li>
+        <strong>Weight, measurements, side effects, protein and water</strong> — the same, from
+        their own sheets.
+      </li>
+    </ul>
+
+    <h2>Reminders are not arriving</h2>
+    <p>Work down this list; it is roughly in order of how often each one turns out to be the cause.</p>
+    <ol>
+      <li>
+        <strong>Permission.</strong> iOS <span class="path">Settings → Doseline → Notifications</span>
+        — allow notifications, and check that Lock Screen, Banners and Sounds are on.
+      </li>
+      <li>
+        <strong>The switch in the app.</strong> Reminders have their own toggle in Doseline's
+        <span class="path">Settings</span>, along with the time of day they fire.
+      </li>
+      <li>
+        <strong>A Focus mode or Do Not Disturb</strong> may be silencing them. Check whether
+        Doseline is allowed to break through the Focus you use at that hour.
+      </li>
+      <li>
+        <strong>The reminder time may already have passed</strong> for the day it was due. The
+        reminder fires at the time you set, not when you open the app.
+      </li>
+      <li>
+        <strong>Low Power Mode</strong> and a device that is switched off both delay delivery.
+      </li>
+    </ol>
+    <p>
+      Reminders are scheduled by iOS on your device — there is no server pushing them — so they are
+      subject to whatever your device's notification settings allow.
+      <strong>Do not rely on the reminder as the only thing between you and a missed dose</strong>,
+      and never take an extra dose because a notification did not appear.
+    </p>
+
+    <h2>Erasing everything</h2>
+    <p>
+      <span class="path">Settings</span> has an option at the bottom that permanently deletes every
+      record the app holds. It cannot be undone and there is no copy anywhere else, so export first
+      if you might want the data later. Deleting the app removes its storage too.
+    </p>
+
+    <h2>Moving to a new phone</h2>
+    <p>
+      Doseline does not yet sync between devices. Two things will carry your record across:
+    </p>
+    <ul>
+      <li>
+        <strong>A device backup.</strong> The app's database is included in an iCloud Backup or an
+        encrypted backup to a computer, so restoring a new phone from one brings Doseline's data
+        with it.
+      </li>
+      <li>
+        <strong>An export</strong>, if you want a copy that does not depend on a backup. Note that
+        exported CSVs are a readable archive, not something the app can import back — so a backup is
+        the route that actually restores the app's own history.
+      </li>
+    </ul>
+
+    <h2>A number looks wrong</h2>
+    <p>
+      Tell me, and include what you expected and what you saw. Reports about the
+      <strong>dose arithmetic</strong> — milligrams, millilitres, U-100 syringe units,
+      reconstitution, how much is left in a vial — go to the front of the queue ahead of everything
+      else, because a wrong number there is a wrong injection.
+    </p>
+    <p>
+      One thing that is <em>not</em> a bug: the "in your system" figure is an estimate from
+      published half-life values, not a measurement of your blood. It is expected to differ from
+      reality.
+    </p>
+
+    <h2>Requests and feedback</h2>
+    <p>
+      Feature requests are genuinely welcome, especially from people actually on treatment. If you
+      are asking for something the app deliberately does not do — a suggested dose, a target it
+      picks for you, a streak that punishes a missed week — I will explain why rather than ignore
+      it. Those omissions are decisions, not gaps.
+    </p>
+
+    <div class="callout medical">
+      <p>
+        <strong>Doseline is not medical advice</strong> and support is not clinical advice. I cannot
+        tell you what dose to take, whether to skip one, or what a symptom means. Those questions
+        belong to the professional who prescribed your medication. If you think you are having a
+        medical emergency, call your local emergency number.
+      </p>
+    </div>
+
+    <p>
+      See also the <a href="terms.html">Terms of Service</a> and the
+      <a href="privacy.html">Privacy Policy</a>.
+    </p>
+
+    <a class="back" href="index.html">← Back</a>
+  </body>
+</html>
