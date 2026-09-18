@@ -162,7 +162,7 @@
   <body>
     <p class="kicker">Doseline</p>
     <h1>Privacy Policy</h1>
-    <p class="effective"><strong>Effective Date:</strong> August 23, 2026</p>
+    <p class="effective"><strong>Effective Date:</strong> September 18, 2026</p>
 
     <p>
       This Privacy Policy explains what the <strong>Doseline</strong> mobile application
@@ -185,12 +185,19 @@
     <h2>1. No Account, No Server</h2>
     <p>
       You never create an account to use Doseline. There is no sign-up, no email address, no
-      password, no social login, and no anonymous identifier assigned to you.
+      password and no social login.
     </p>
     <p>
       There is also no backend. Doseline is not a client for a service we operate — it is a
-      self-contained app. We do not receive your data, we cannot look it up, and we could not
-      produce it if we were asked to.
+      self-contained app. <strong>We do not receive your health data</strong>, we cannot look it up,
+      and we could not produce it if we were asked to.
+    </p>
+    <p>
+      One narrow exception is worth naming here rather than burying: if you buy or restore a
+      Doseline Pro subscription, the App Store receipt for that purchase is checked with Apple and
+      with RevenueCat, the service that verifies it, under an anonymous identifier RevenueCat
+      generates itself. That receipt is the only thing that ever leaves your device. Section 8 sets
+      out exactly what it contains and what it does not.
     </p>
 
     <h2>2. What the App Stores, and Where</h2>
@@ -210,6 +217,19 @@
         them.
       </li>
       <li><strong>Protein and water</strong> — the amounts you count, by day.</li>
+      <li>
+        <strong>How the day went</strong> — the single five-point entry you can record for a day,
+        if you record one.
+      </li>
+      <li>
+        <strong>Daily step totals</strong>, if you import them from Apple Health — one total per
+        day, never the underlying samples.
+      </li>
+      <li>
+        <strong>Progress photos</strong>, if you take any. These are image files in Doseline's own
+        private folder, not in your photo library, and they can be put behind Face ID. They are
+        never uploaded and nothing outside the app can read them.
+      </li>
       <li>
         <strong>Supply</strong> — the pens or vials you have started, their strength, and when you
         opened them.
@@ -232,8 +252,17 @@
       brokers, insurers, employers, or pharmaceutical companies.
     </p>
     <p>
-      Doseline does not connect to <strong>Apple Health</strong>. It neither reads from nor writes
-      to HealthKit, and it never asks for permission to do so.
+      Doseline can <strong>read</strong> from <strong>Apple Health</strong>, and only if you turn it
+      on and grant the permission iOS asks for. It reads four things — body weight, protein, water,
+      and your daily step count — so that what you already logged elsewhere does not have to be
+      typed twice. <strong>It never writes to Apple Health</strong>, it reads nothing else, and it
+      reads nothing at all until you ask it to.
+    </p>
+    <p>
+      What is imported is copied into Doseline's own database on your device and is treated exactly
+      like an entry you typed: editable, deletable, and never sent anywhere. You can withdraw the
+      permission at any time in the Health app, and the rest of Doseline works unchanged if you
+      never grant it.
     </p>
 
     <h2>4. Device Backups</h2>
@@ -284,7 +313,7 @@
     <ul>
       <li>Your name, email address, phone number, postal address, or date of birth</li>
       <li>Your location, at any precision</li>
-      <li>Your contacts, calendar, photos, camera, or microphone</li>
+      <li>Your contacts, calendar, photo library, or microphone</li>
       <li>
         The advertising identifier (IDFA), and the App Tracking Transparency prompt is therefore
         never shown
@@ -293,16 +322,23 @@
       <li>Screen views, taps, sessions, funnels, or any other behavioural analytics</li>
     </ul>
     <p>
-      The app requests <strong>no device permissions at all</strong> except notifications, and that
-      one is optional. This is verifiable rather than a promise: the app declares no permission
-      usage descriptions, and it contains no analytics SDK, no advertising SDK, no crash reporter,
-      and no third-party tracking library of any kind.
+      Every permission the app can ask for is optional, is asked for only when you use the feature
+      that needs it, and can be withdrawn afterwards in iOS Settings. There are four:
+      <strong>notifications</strong>, for dose reminders; <strong>Apple Health</strong>, read-only,
+      for the import described in section 3; the <strong>camera</strong>, if you take a progress
+      photo; and <strong>Face ID</strong>, if you choose to lock those photos. Decline all four and
+      the rest of the app works.
+    </p>
+    <p>
+      Doseline contains <strong>no analytics SDK, no advertising SDK, no crash reporter, and no
+      tracking library of any kind</strong>. Nothing in the app reports what you do with it.
     </p>
 
     <h2>8. Third-Party Services</h2>
     <p>
-      Doseline embeds no third-party services. The only company involved in your use of the app
-      besides you is <strong>Apple</strong>, in the ordinary ways:
+      Two companies are involved in your use of the app besides you: <strong>Apple</strong>, in the
+      ordinary ways, and <strong>RevenueCat</strong>, which exists solely to check whether a Doseline
+      Pro subscription is active.
     </p>
     <ul>
       <li>
@@ -315,10 +351,22 @@
         Apple's standard "rate this app" sheet. The app asks iOS to consider showing it and sends no
         data with the request; whatever you write in a review goes to Apple, not to us.
       </li>
+      <li>
+        <strong>RevenueCat</strong> verifies subscription purchases. When you buy or restore
+        Doseline Pro, the App Store receipt for that purchase and an anonymous identifier that
+        RevenueCat itself generates are sent to its servers, which tell the app whether Pro is
+        active. That is the <strong>only</strong> thing that ever leaves your device, and it is
+        sent only if you make or restore a purchase. <strong>No dose, weight, measurement,
+        symptom, photo, note or any other health information is sent to RevenueCat or to anyone
+        else</strong> — it is not linked to your record, and we do not give RevenueCat your name or
+        email address because we do not have them. RevenueCat's handling of that receipt is
+        governed by its own
+        <a href="https://www.revenuecat.com/privacy" rel="noopener">privacy policy</a>.
+      </li>
     </ul>
     <p>
-      Doseline does not currently offer in-app purchases. If it offers them in the future, they will
-      be processed by Apple, and we will never see your payment details.
+      Purchases themselves are processed by <strong>Apple</strong>. We never see your payment
+      details, and we cannot identify you from a purchase.
     </p>
 
     <h2>9. Children's Privacy</h2>
